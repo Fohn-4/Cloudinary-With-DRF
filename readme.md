@@ -1,5 +1,5 @@
 # Cloudinary with Django Rest Framework
-This id a basic usage of cloudinary in a DRF environement. The image file is upload on a Cloudinary server and the image URL is send to the DataBase
+This is a basic usage of cloudinary in a DRF environement. The image file is upload on a Cloudinary server and the image URL is registred in the DataBase
 
 ### Instalation of this project
 Required :
@@ -18,14 +18,12 @@ Required :
 3.  Copy your cloudinary credential in a .env file.
     You can see a template for exemple as env.py
 
-### Running and usage
+### Running this project and usage
 Start your venv then go in CloudinaryWithDRF folder. 
 Start the project with `python manage.py runserver` 
-you should now see your API url in the prompt http://127.0.0.1:8000/ 
 
-in Postman ( not on DRF ) use the url http://127.0.0.1:8000/api/upload/ for testing to send an image
-key imageFile
-value File
+In Postman ( not on DRF ) try the POST method on the url http://127.0.0.1:8000/api/upload/ 
+Now you can test with *imageFile* as key with a type of File. And put any image in the value.
 
 
 ## Creation process
@@ -59,6 +57,6 @@ value File
         imageFile = CloudinaryField('image', folder='exmple/')
     ```
 
-    The CloudinaryField will automacli send the file to the distant server and give back a result with the image url
+    The CloudinaryField will send the file to the distant server and generate a result with the image url
 
 4. Do your Serializer and view as usued

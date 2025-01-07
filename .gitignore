@@ -1,2 +1,10 @@
 venv
+db.sqlite3
+
+#sensitive data
 .env
+
+#migration and pycache django
+__pycache__
+**/migrations/*.py
+!**/migrations/__init__.py
