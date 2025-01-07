@@ -6,6 +6,7 @@ Required :
 - A Cloudinary account
 - Postman or similar tool
 
+Install:
 1.  In your virtual env:
     Install the requirement with `pip install -r requirement.txt`
 
